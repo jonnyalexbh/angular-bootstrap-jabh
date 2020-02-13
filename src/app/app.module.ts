@@ -7,6 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HomeComponent } from './screens/home/home.component';
 import { ProductComponent } from './screens/product/product.component';
 import { AlbumComponent } from './screens/album/album.component';
+import { SampleProductComponent } from './screens/sample-product/sample-product.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AlbumComponent } from './screens/album/album.component';
     MenuComponent,
     HomeComponent,
     ProductComponent,
-    AlbumComponent
+    AlbumComponent,
+    SampleProductComponent
   ],
   imports: [
     BrowserModule,
