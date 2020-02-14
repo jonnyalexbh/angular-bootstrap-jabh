@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.albums-header {
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: repeat(2, 10%) 80%;
+}
+
+.header-title {
+  place-self: center;
+}
+
+.albums-list {
+  display: grid;
+  grid-template-columns: repeat(2, 10%) 80%;
+  justify-items: stretch;
+}
