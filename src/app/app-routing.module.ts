@@ -5,6 +5,7 @@ import { HomeComponent } from './screens/home/home.component';
 import { AlbumComponent } from './screens/album/album.component';
 import { ProductComponent } from './screens/product/product.component';
 import { SampleProductComponent } from './screens/sample-product/sample-product.component';
+import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'sample-products',
     component: SampleProductComponent,
+  },
+  {
+    path: 'my-billing-chart',
+    component: MyBillingChartComponent,
   }
 ];
 
