@@ -11,6 +11,9 @@ import { AlbumComponent } from './screens/album/album.component';
 import { SampleProductComponent } from './screens/sample-product/sample-product.component';
 import { ChartModule } from 'angular-highcharts';
 import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
+import { ParentComponent } from './screens/parent/parent.component';
+import { ChildReceiverComponent } from './screens/parent/components/child-receiver/child-receiver.component';
+import { ChildEmiterComponent } from './screens/parent/components/child-emiter/child-emiter.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-c
     ProductComponent,
     AlbumComponent,
     SampleProductComponent,
-    MyBillingChartComponent
+    MyBillingChartComponent,
+    ParentComponent,
+    ChildReceiverComponent,
+    ChildEmiterComponent
   ],
   imports: [
     BrowserModule,
