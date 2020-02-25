@@ -7,7 +7,6 @@ import { ProductComponent } from './screens/product/product.component';
 import { SampleProductComponent } from './screens/sample-product/sample-product.component';
 import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
 import { ParentComponent } from './screens/parent/parent.component';
-import { ChildEmiterComponent } from './screens/parent/components/child-emiter/child-emiter.component';
 
 const routes: Routes = [
   {
@@ -36,12 +35,8 @@ const routes: Routes = [
     component: MyBillingChartComponent,
   },
   {
-    path: 'parent-component-emit',
+    path: 'parent-component',
     component: ParentComponent,
-  },
-  {
-    path: 'child-component-emit',
-    component: ChildEmiterComponent,
   },
 ];
 

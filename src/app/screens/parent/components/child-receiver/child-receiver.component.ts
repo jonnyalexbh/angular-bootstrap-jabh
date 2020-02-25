@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child-receiver',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child-receiver.component.scss']
 })
 export class ChildReceiverComponent implements OnInit {
+
+  @Input() childMessage: string;
 
   constructor() { }
 

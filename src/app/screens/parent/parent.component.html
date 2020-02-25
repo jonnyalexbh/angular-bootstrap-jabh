@@ -1,3 +1,15 @@
-<p>
-  parent-emiter works!
-</p>
+<app-child-emiter (message1Child)="receiveMessage1Child($event)" (message2Child)='message2Child=$event'
+  (message3Child)='productsChild=$event'>
+</app-child-emiter>
+
+<h1>Parent Component</h1>
+
+<app-child-receiver [childMessage]="parentMessage"></app-child-receiver>
+
+<p>Child Emiter: {{ message }}</p>
+<p>Child Emiter2: {{ message2Child }}</p>
+<p>Child Emiter3: {{ productsChild | json }}</p>
+
+<li *ngFor="let product of productsChild">
+  {{ product.id }} - {{ product.title }} - {{ product.price }}
+</li>

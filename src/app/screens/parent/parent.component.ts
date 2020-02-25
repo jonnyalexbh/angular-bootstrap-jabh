@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
+  message: string;
+
+  parentMessage = 'message from parent';
+  message2Child: String;
+  productsChild: any[];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  receiveMessage1Child($event) {
+    this.message = $event
+  }
 }
