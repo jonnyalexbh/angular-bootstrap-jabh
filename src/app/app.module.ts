@@ -14,6 +14,9 @@ import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-c
 import { ParentComponent } from './screens/parent/parent.component';
 import { ChildReceiverComponent } from './screens/parent/components/child-receiver/child-receiver.component';
 import { ChildEmiterComponent } from './screens/parent/components/child-emiter/child-emiter.component';
+import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
+import { ChildOneComponent } from './screens/getter-setter/components/child-one/child-one.component';
+import { ChildTwoComponent } from './screens/getter-setter/components/child-two/child-two.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { ChildEmiterComponent } from './screens/parent/components/child-emiter/c
     MyBillingChartComponent,
     ParentComponent,
     ChildReceiverComponent,
-    ChildEmiterComponent
+    ChildEmiterComponent,
+    GetterSetterComponent,
+    ChildOneComponent,
+    ChildTwoComponent
   ],
   imports: [
     BrowserModule,

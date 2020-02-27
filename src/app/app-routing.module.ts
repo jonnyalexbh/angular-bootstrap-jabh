@@ -7,6 +7,7 @@ import { ProductComponent } from './screens/product/product.component';
 import { SampleProductComponent } from './screens/sample-product/sample-product.component';
 import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
 import { ParentComponent } from './screens/parent/parent.component';
+import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'parent-component',
     component: ParentComponent,
+  },
+  {
+    path: 'getter-and-setter',
+    component: GetterSetterComponent,
   },
 ];
 
