@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetterSetterComponent implements OnInit {
 
-  constructor() { }
+  periods: any[] = ['MES', 'TRIMESTRE', 'SEMESTRE', 'AÑO'];
+  periodIndex: number;
+  age: number = 26;
+
+  constructor() {
+    this.periodIndex = 3;
+  }
 
   ngOnInit() {
+  }
+
+  changePeriod(index) {
+    this.periodIndex = index;
   }
 
 }

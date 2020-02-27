@@ -1,3 +1,6 @@
-<p>
-  getter-setter works!
-</p>
+<button (click)="changePeriod(i)" *ngFor="let period of periods; let i = index">{{ period }}</button>
+
+<p>Component parent periodIndex {{ periodIndex }}</p>
+<p>Component parent age {{ age }}</p>
+
+<app-child-one [periodIndexChild]=periodIndex [age]=age></app-child-one>
