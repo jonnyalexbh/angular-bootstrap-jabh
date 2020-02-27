@@ -1,5 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+enum TimePeriods {
+  Month = 0,
+  Quarter = 1,
+  Semestre = 2,
+  Year = 3
+}
 @Component({
   selector: 'app-child-one',
   templateUrl: './child-one.component.html',
@@ -7,7 +13,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ChildOneComponent implements OnInit {
 
-  @Input() age:number;
+  timePeriods = TimePeriods;
+  @Input() age: number;
 
   localPeriodIndex: number;
   @Input() set periodIndexChild(value: number) {
