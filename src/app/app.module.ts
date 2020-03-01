@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CustomTranslateLoader } from './customTranslateLoader';
 import { MenuComponent } from './components/menu/menu.component';
 import { HomeComponent } from './screens/home/home.component';
 import { ProductComponent } from './screens/product/product.component';
@@ -17,6 +19,7 @@ import { ChildEmiterComponent } from './screens/parent/components/child-emiter/c
 import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
 import { ChildOneComponent } from './screens/getter-setter/components/child-one/child-one.component';
 import { ChildTwoComponent } from './screens/getter-setter/components/child-two/child-two.component';
+import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +35,20 @@ import { ChildTwoComponent } from './screens/getter-setter/components/child-two/
     ChildEmiterComponent,
     GetterSetterComponent,
     ChildOneComponent,
-    ChildTwoComponent
+    ChildTwoComponent,
+    InternationalizationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: CustomTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     ChartModule
   ],
   providers: [],

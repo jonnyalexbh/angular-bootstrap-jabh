@@ -8,6 +8,7 @@ import { SampleProductComponent } from './screens/sample-product/sample-product.
 import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
 import { ParentComponent } from './screens/parent/parent.component';
 import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
+import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'getter-and-setter',
     component: GetterSetterComponent,
+  },
+  {
+    path: 'internationalization',
+    component: InternationalizationComponent,
   },
 ];
 
