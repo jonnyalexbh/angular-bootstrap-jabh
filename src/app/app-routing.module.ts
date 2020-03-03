@@ -9,6 +9,7 @@ import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-c
 import { ParentComponent } from './screens/parent/parent.component';
 import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
+import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'internationalization',
     component: InternationalizationComponent,
+  },
+  {
+    path: 'sample-testing',
+    component: SampleTestingComponent,
   },
 ];
 

@@ -20,6 +20,7 @@ import { GetterSetterComponent } from './screens/getter-setter/getter-setter.com
 import { ChildOneComponent } from './screens/getter-setter/components/child-one/child-one.component';
 import { ChildTwoComponent } from './screens/getter-setter/components/child-two/child-two.component';
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
+import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { InternationalizationComponent } from './screens/internationalization/in
     GetterSetterComponent,
     ChildOneComponent,
     ChildTwoComponent,
-    InternationalizationComponent
+    InternationalizationComponent,
+    SampleTestingComponent
   ],
   imports: [
     BrowserModule,
