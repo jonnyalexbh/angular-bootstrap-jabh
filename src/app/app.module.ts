@@ -21,6 +21,7 @@ import { ChildOneComponent } from './screens/getter-setter/components/child-one/
 import { ChildTwoComponent } from './screens/getter-setter/components/child-two/child-two.component';
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
+import { ComparativeChartBillingComponent } from './screens/comparative-chart-billing/comparative-chart-billing.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SampleTestingComponent } from './screens/sample-testing/sample-testing.
     ChildOneComponent,
     ChildTwoComponent,
     InternationalizationComponent,
-    SampleTestingComponent
+    SampleTestingComponent,
+    ComparativeChartBillingComponent
   ],
   imports: [
     BrowserModule,

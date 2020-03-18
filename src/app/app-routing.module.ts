@@ -6,6 +6,7 @@ import { AlbumComponent } from './screens/album/album.component';
 import { ProductComponent } from './screens/product/product.component';
 import { SampleProductComponent } from './screens/sample-product/sample-product.component';
 import { MyBillingChartComponent } from './screens/my-billing-chart/my-billing-chart.component';
+import { ComparativeChartBillingComponent } from './screens/comparative-chart-billing/comparative-chart-billing.component';
 import { ParentComponent } from './screens/parent/parent.component';
 import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'my-billing-chart',
     component: MyBillingChartComponent,
+  },
+  {
+    path: 'comparative-chart-billing',
+    component: ComparativeChartBillingComponent,
   },
   {
     path: 'parent-component',
