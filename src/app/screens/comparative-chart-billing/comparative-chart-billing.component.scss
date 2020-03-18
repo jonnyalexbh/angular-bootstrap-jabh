@@ -1,0 +1,37 @@
+.periods {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-left {
+  width: 12%;
+}
+
+.column-right {
+  width: 86%;
+}
+
+.group-labels {
+  display: flex;
+}
+
+.group-labels-item {
+  background-color: #EAEAEA;
+  border-radius: 6px;
+  color: #747474;
+  flex-grow: 1;
+  font-size: 8px;
+  height: 35px;
+  margin: 0 1px;
+  width: 33px;
+}
+
+.label-selected {
+  border: 2px solid #0076FF;
+  color: #0076FF;
+}

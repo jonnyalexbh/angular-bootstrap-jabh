@@ -1,3 +1,18 @@
-<p>
-  comparative-chart-billing works!
-</p>
+<div class="main">
+  <div class="column-left">&nbsp;</div>
+  <div class="column-right">
+
+    <div class="periods">
+      <button (click)="changePeriods(i)" *ngFor="let period of periods; let i = index">{{ period }}</button>
+    </div>
+
+    <div #charts></div>
+
+    <div class="group-labels">
+      <div (click)="selectPeriod(i)" *ngFor="let item of getGroupLabels; let i = index"
+        [ngClass]="{'label-selected ': i === indexLbl }" class=" group-labels-item">
+        {{ item }}
+      </div>
+    </div>
+  </div>
+</div>
