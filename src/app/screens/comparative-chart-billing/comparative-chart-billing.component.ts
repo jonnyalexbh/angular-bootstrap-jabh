@@ -14,12 +14,15 @@ export class ComparativeChartBillingComponent implements OnInit {
   dataService: any;
   periods: Array<string> = ['MES', 'TRIMESTRE', 'SEMESTRE', 'AÑO'];
   indexLbl: number;
+  periodIndex: number;
 
   get getGroupLabels() {
     return this.dataService.me.group_labels;
   }
 
-  constructor() { }
+  constructor() {
+    this.periodIndex = 0;
+   }
 
   ngOnInit() {
     this.getBillingComparison();
@@ -32,6 +35,7 @@ export class ComparativeChartBillingComponent implements OnInit {
   }
 
   changePeriods(period) {
+    this.periodIndex = period;
     this.getBillingComparison(period);
   }
 
