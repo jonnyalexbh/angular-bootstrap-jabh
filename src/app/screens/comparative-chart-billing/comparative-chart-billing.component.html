@@ -3,7 +3,11 @@
   <div class="column-right">
 
     <div class="periods">
-      <button (click)="changePeriods(i)" *ngFor="let period of periods; let i = index">{{ period }}</button>
+      <div class="periods-title">1 ene 2020 - 31 dic 2020 </div>
+      <div class="periods-items">
+        <button class="period-item" (click)="changePeriods(i)" *ngFor="let period of periods; let i = index"
+          [ngClass]="{'selected-item-period': i === periodIndex}">{{ period }}</button>
+      </div>
     </div>
 
     <div #charts></div>
