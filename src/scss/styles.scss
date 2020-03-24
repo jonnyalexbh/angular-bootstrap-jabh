@@ -1,3 +1,10 @@
 * {
   font-family: $font-family;
 }
+
+.button {
+  background-color: $light-grey;
+  border-radius: 4px;
+  display: block;
+  padding: 10px 50px;
+}

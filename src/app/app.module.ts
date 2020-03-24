@@ -22,6 +22,9 @@ import { ChildTwoComponent } from './screens/getter-setter/components/child-two/
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
 import { ComparativeChartBillingComponent } from './screens/comparative-chart-billing/comparative-chart-billing.component';
+import { ObservableRxjsComponent } from './screens/observable-rxjs/observable-rxjs.component';
+import { CardOneComponent } from './screens/observable-rxjs/components/card-one/card-one.component';
+import { CardTwoComponent } from './screens/observable-rxjs/components/card-two/card-two.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { ComparativeChartBillingComponent } from './screens/comparative-chart-bi
     ChildTwoComponent,
     InternationalizationComponent,
     SampleTestingComponent,
-    ComparativeChartBillingComponent
+    ComparativeChartBillingComponent,
+    ObservableRxjsComponent,
+    CardOneComponent,
+    CardTwoComponent
   ],
   imports: [
     BrowserModule,

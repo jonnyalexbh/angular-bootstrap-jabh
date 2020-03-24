@@ -11,6 +11,7 @@ import { ParentComponent } from './screens/parent/parent.component';
 import { GetterSetterComponent } from './screens/getter-setter/getter-setter.component';
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
+import { ObservableRxjsComponent } from './screens/observable-rxjs/observable-rxjs.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,10 @@ const routes: Routes = [
   {
     path: 'sample-testing',
     component: SampleTestingComponent,
+  },
+  {
+    path: 'observable-rxjs',
+    component: ObservableRxjsComponent,
   },
 ];
 
