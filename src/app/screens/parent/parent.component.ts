@@ -9,7 +9,7 @@ export class ParentComponent implements OnInit {
   message: string;
 
   parentMessage = 'message from parent';
-  message2Child: String;
+  message2Child: string;
   productsChild: any[];
 
   constructor() { }
@@ -18,6 +18,6 @@ export class ParentComponent implements OnInit {
   }
 
   receiveMessage1Child($event) {
-    this.message = $event
+    this.message = $event;
   }
 }
