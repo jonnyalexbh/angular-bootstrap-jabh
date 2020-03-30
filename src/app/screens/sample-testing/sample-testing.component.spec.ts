@@ -5,7 +5,7 @@ import { SampleTestingComponent } from './sample-testing.component';
 import { SampleAlbumService } from '../../services/sample-album.service';
 import { MockAlbumsService } from 'src/test/mocks/services/albums';
 
-fdescribe('SampleTestingComponent', () => {
+describe('SampleTestingComponent', () => {
   let component: SampleTestingComponent;
   let fixture: ComponentFixture<SampleTestingComponent>;
 

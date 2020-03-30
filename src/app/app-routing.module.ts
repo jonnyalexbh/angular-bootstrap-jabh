@@ -12,6 +12,7 @@ import { GetterSetterComponent } from './screens/getter-setter/getter-setter.com
 import { InternationalizationComponent } from './screens/internationalization/internationalization.component';
 import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
 import { ObservableRxjsComponent } from './screens/observable-rxjs/observable-rxjs.component';
+import { SampleTestingObserverComponent } from './screens/sample-testing-observer/sample-testing-observer.component';
 
 const routes: Routes = [
   {
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path: 'sample-testing',
     component: SampleTestingComponent,
+  },
+  {
+    path: 'testing-obs',
+    component: SampleTestingObserverComponent,
   },
   {
     path: 'observable-rxjs',

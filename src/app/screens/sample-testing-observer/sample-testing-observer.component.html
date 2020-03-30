@@ -1,0 +1,5 @@
+<div class="periods">
+  <button class="button" (click)="changePeriod(i)" *ngFor="let item of periods; let i = index">{{ item }}</button>
+</div>
+
+<app-list-albums [periodParent]="periodIndex"></app-list-albums>

@@ -1,0 +1,19 @@
+<p>
+  list albums component : selected period {{ periodParent }}
+</p>
+
+<div *ngIf="showOnBoarding">
+  OnBoarding <a (click)="closeOnBoarding()">close</a>
+</div>
+
+<div class="albums-header">
+  <div>userId</div>
+  <div>id</div>
+  <div class="header-title">title</div>
+</div>
+
+<div class="albums-list" *ngFor="let album of albums">
+  <span>{{ album.userId }}</span>
+  <span>{{ album.id }}</span>
+  <span>{{ album.title }}</span>
+</div>

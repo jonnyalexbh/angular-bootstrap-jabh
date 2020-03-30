@@ -25,6 +25,8 @@ import { ComparativeChartBillingComponent } from './screens/comparative-chart-bi
 import { ObservableRxjsComponent } from './screens/observable-rxjs/observable-rxjs.component';
 import { CardOneComponent } from './screens/observable-rxjs/components/card-one/card-one.component';
 import { CardTwoComponent } from './screens/observable-rxjs/components/card-two/card-two.component';
+import { SampleTestingObserverComponent } from './screens/sample-testing-observer/sample-testing-observer.component';
+import { ListAlbumsComponent } from './screens/sample-testing-observer/components/list-albums/list-albums.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { CardTwoComponent } from './screens/observable-rxjs/components/card-two/
     ComparativeChartBillingComponent,
     ObservableRxjsComponent,
     CardOneComponent,
-    CardTwoComponent
+    CardTwoComponent,
+    SampleTestingObserverComponent,
+    ListAlbumsComponent
   ],
   imports: [
     BrowserModule,
