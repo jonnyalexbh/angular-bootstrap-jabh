@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SampleAlbumService } from '../../services/sample-album.service';
 
 @Component({
   selector: 'app-sample-testing',
@@ -7,19 +6,10 @@ import { SampleAlbumService } from '../../services/sample-album.service';
   styleUrls: ['./sample-testing.component.scss']
 })
 export class SampleTestingComponent implements OnInit {
-  albums: [];
 
-  constructor(private albumService: SampleAlbumService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getAlbums();
-  }
-
-  getAlbums() {
-    this.albumService.getAllAlbums()
-      .subscribe(albums => {
-        this.albums = albums;
-      });
   }
 
 }

@@ -5,7 +5,7 @@ import { SampleTestService } from 'src/app/services/sample-test.service';
 import { MockAlbumsService } from 'src/test/mocks/services/albums';
 import { MockTestService } from 'src/test/mocks/services/sample-test';
 
-fdescribe('ListAlbumsComponent', () => {
+describe('ListAlbumsComponent', () => {
   let component: ListAlbumsComponent;
   let fixture: ComponentFixture<ListAlbumsComponent>;
 

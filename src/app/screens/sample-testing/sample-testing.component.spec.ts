@@ -1,9 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { SampleTestingComponent } from './sample-testing.component';
-import { SampleAlbumService } from '../../services/sample-album.service';
-import { MockAlbumsService } from 'src/test/mocks/services/albums';
 
 describe('SampleTestingComponent', () => {
   let component: SampleTestingComponent;
@@ -11,13 +8,7 @@ describe('SampleTestingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientTestingModule,
-      ],
-      declarations: [SampleTestingComponent],
-      providers: [
-        { provide: SampleAlbumService, useClass: MockAlbumsService },
-      ]
+      declarations: [SampleTestingComponent]
     })
       .compileComponents();
   }));
