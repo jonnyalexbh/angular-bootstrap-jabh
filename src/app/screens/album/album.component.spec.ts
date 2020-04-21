@@ -5,7 +5,7 @@ import { AlbumComponent } from './album.component';
 import { AlbumService } from '../../services/album.service';
 import { MockAlbumsService } from 'src/test/mocks/services/albums';
 
-fdescribe('AlbumComponent', () => {
+describe('AlbumComponent', () => {
   let component: AlbumComponent;
   let fixture: ComponentFixture<AlbumComponent>;
 
