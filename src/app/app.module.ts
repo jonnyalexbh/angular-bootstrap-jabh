@@ -27,6 +27,7 @@ import { CardOneComponent } from './screens/observable-rxjs/components/card-one/
 import { CardTwoComponent } from './screens/observable-rxjs/components/card-two/card-two.component';
 import { SampleTestingObserverComponent } from './screens/sample-testing-observer/sample-testing-observer.component';
 import { ListAlbumsComponent } from './screens/sample-testing-observer/components/list-albums/list-albums.component';
+import { StudentsComponent } from './screens/students/students.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ListAlbumsComponent } from './screens/sample-testing-observer/component
     CardOneComponent,
     CardTwoComponent,
     SampleTestingObserverComponent,
-    ListAlbumsComponent
+    ListAlbumsComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,

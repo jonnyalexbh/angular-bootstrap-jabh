@@ -13,6 +13,7 @@ import { InternationalizationComponent } from './screens/internationalization/in
 import { SampleTestingComponent } from './screens/sample-testing/sample-testing.component';
 import { ObservableRxjsComponent } from './screens/observable-rxjs/observable-rxjs.component';
 import { SampleTestingObserverComponent } from './screens/sample-testing-observer/sample-testing-observer.component';
+import { StudentsComponent } from './screens/students/students.component';
 
 const routes: Routes = [
   {
@@ -67,6 +68,10 @@ const routes: Routes = [
   {
     path: 'observable-rxjs',
     component: ObservableRxjsComponent,
+  },
+  {
+    path: 'students',
+    component: StudentsComponent,
   },
 ];
 
