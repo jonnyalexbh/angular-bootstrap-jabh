@@ -3,7 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { SampleTestingComponent } from './sample-testing.component';
 
-fdescribe('SampleTestingComponent', () => {
+describe('SampleTestingComponent', () => {
   let component: SampleTestingComponent;
   let fixture: ComponentFixture<SampleTestingComponent>;
 

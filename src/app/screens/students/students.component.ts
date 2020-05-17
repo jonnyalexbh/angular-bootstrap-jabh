@@ -10,7 +10,7 @@ export class StudentsComponent implements OnInit {
 
   userList: [];
 
-  constructor(private studentService: StudentService) { }
+  constructor(public studentService: StudentService) { }
 
   ngOnInit() {
     this.getStudents();
