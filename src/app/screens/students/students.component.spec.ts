@@ -5,7 +5,7 @@ import { StudentServiceStub } from './students.service.mock';
 
 import { StudentsComponent } from './students.component';
 
-fdescribe('StudentsComponent', () => {
+describe('StudentsComponent', () => {
   let component: StudentsComponent;
   let fixture: ComponentFixture<StudentsComponent>;
 
