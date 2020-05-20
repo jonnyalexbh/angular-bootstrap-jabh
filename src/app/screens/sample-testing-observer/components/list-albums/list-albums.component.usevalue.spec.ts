@@ -1,28 +1,28 @@
+import { of } from 'rxjs';
 import { ListAlbumsComponent } from './list-albums.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { SampleTestService } from 'src/app/services/sample-test.service';
 import { SampleAlbumService } from '../../../../services/sample-album.service';
 import { MockAlbumsFactory } from '../../../../../test/mocks/services/common';
 
-fdescribe('ListAlbumsComponent useFactory', () => {
+describe('ListAlbumsComponent useValue', () => {
   let component: ListAlbumsComponent;
   let fixture: ComponentFixture<ListAlbumsComponent>;
+  let mockServiceAlbums;
 
   beforeEach(async(() => {
-    const sampleAlbumServiceStub = () => ({
-      getAllAlbums: () => ({ subscribe: f => f(MockAlbumsFactory) }),
-      // getAllAlbums: () => ({ pipe: () => ({ subscribe: f => f(MockAlbumsFactory) }) }),
-    });
-
     const sampleTestServiceStub = () => ({
       currentOnBoarding: { subscribe: f => f({}) },
       changeOnBoarding: arg => ({})
     });
 
+    mockServiceAlbums = jasmine.createSpyObj(['getAllAlbums']);
+    mockServiceAlbums.getAllAlbums.and.returnValue(of(MockAlbumsFactory));
+
     TestBed.configureTestingModule({
       declarations: [ListAlbumsComponent],
       providers: [
-        { provide: SampleAlbumService, useFactory: sampleAlbumServiceStub },
+        { provide: SampleAlbumService, useValue: mockServiceAlbums },
         { provide: SampleTestService, useFactory: sampleTestServiceStub }
       ]
     })

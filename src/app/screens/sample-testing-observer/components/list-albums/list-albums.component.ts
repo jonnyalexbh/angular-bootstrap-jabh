@@ -1,5 +1,5 @@
 
-import { skip } from 'rxjs/operators';
+// import { tap} from 'rxjs/operators';
 import { Component, OnInit, Input, OnChanges, OnDestroy } from '@angular/core';
 import { SampleAlbumService } from 'src/app/services/sample-album.service';
 import { SampleTestService } from 'src/app/services/sample-test.service';
@@ -44,6 +44,9 @@ export class ListAlbumsComponent implements OnInit, OnChanges, OnDestroy {
 
   getAlbums() {
     this.albumService.getAllAlbums()
+      // .pipe(
+      //   tap(console.log)
+      // )
       .subscribe(albums => {
         this.albums = albums;
       });
