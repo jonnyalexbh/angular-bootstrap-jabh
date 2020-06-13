@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-internationalization',
   templateUrl: './internationalization.component.html',
@@ -8,14 +6,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class InternationalizationComponent implements OnInit {
 
-  title: string;
+  constructor() { }
 
-  constructor(private translate: TranslateService) { }
-
-  ngOnInit() {
-    this.translate.get('main.title').subscribe((res: any) => {
-      this.title = res;
-    });
-  }
+  ngOnInit() { }
 
 }

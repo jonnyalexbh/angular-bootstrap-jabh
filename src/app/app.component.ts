@@ -9,7 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'Angular Bootstrap';
 
-  constructor(translate: TranslateService) {
-    translate.setDefaultLang('es');
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+  }
+
+  setLanguage(language: string) {
+    this.translate.use(language);
   }
 }
